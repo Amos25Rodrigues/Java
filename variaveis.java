@@ -6,11 +6,12 @@ public class variaveis {
         String meuNome = "Amós";
         char meuSexo = 'M';
         float minhaAltura = 1.68f;
-
+        var variavel = 1; // var aceita qualquer tipo primitivo, recebendo 
         System.out.println(minhaIdade);
         System.out.println(meuNome);
         System.out.println(meuSexo);
         System.out.println(minhaAltura);
+        System.out.println(variavel);
 
         /* TIPOS PRIMITIVOS
         * numeros inteiros = 100, 255, 219.201.108.231.903
