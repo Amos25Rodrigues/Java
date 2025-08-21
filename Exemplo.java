@@ -13,4 +13,3 @@ public class Exemplo {
         e.metodo();
     }
 }
-//Outro teste
