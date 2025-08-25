@@ -1,4 +1,4 @@
-public class Exemplo {
+public class exemplo {
     int cont = 1;
 
     public void metodo(){
@@ -9,7 +9,7 @@ public class Exemplo {
     }
 
     public static void main(String[] args) {
-        Exemplo e = new Exemplo();
+        exemplo e = new exemplo();
         e.metodo();
     }
 }
