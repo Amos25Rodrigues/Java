@@ -33,6 +33,7 @@ public class conversorDeTemperatura {
             } 
             
         }
+        sc.close();
     }
 
     public static void conversorCelsiusFahrenheit(double n1) {

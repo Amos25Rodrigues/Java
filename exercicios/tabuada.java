@@ -11,5 +11,6 @@ public class tabuada {
         for (int i = 1; i <= 10; i++) {
             System.out.println(i + " * " + n1 + " = " + (i * n1));
         }
+        sc.close();
     }
 }
