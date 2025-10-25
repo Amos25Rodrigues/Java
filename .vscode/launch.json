@@ -1,0 +1,105 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "casting",
+            "request": "launch",
+            "mainClass": "casting",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "classes",
+            "request": "launch",
+            "mainClass": "classes",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "exemplo",
+            "request": "launch",
+            "mainClass": "exemplo",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "calculadora",
+            "request": "launch",
+            "mainClass": "exercicios.calculadora",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "conversorDeTemperatura",
+            "request": "launch",
+            "mainClass": "exercicios.conversorDeTemperatura",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "lerMaiorMenor",
+            "request": "launch",
+            "mainClass": "exercicios.lerMaiorMenor",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "media",
+            "request": "launch",
+            "mainClass": "exercicios.media",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "paresEImpares",
+            "request": "launch",
+            "mainClass": "exercicios.paresEImpares",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "tabuada",
+            "request": "launch",
+            "mainClass": "exercicios.tabuada",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "ifElse",
+            "request": "launch",
+            "mainClass": "ifElse",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "loops",
+            "request": "launch",
+            "mainClass": "loops",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "variaveis",
+            "request": "launch",
+            "mainClass": "variaveis",
+            "projectName": "Java_81d2390f"
+        },
+        {
+            "type": "java",
+            "name": "vetores",
+            "request": "launch",
+            "mainClass": "vetores",
+            "projectName": "Java_81d2390f"
+        }
+    ]
+}
