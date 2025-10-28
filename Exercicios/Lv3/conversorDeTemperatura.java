@@ -1,4 +1,4 @@
-package exercicios;
+package Exercicios.Lv3;
 import java.util.Scanner;
 
 public class conversorDeTemperatura {

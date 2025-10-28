@@ -1,4 +1,4 @@
-package exercicios;
+package Exercicios.Lv1;
 import java.util.Scanner;
 
 public class paresEImpares {
