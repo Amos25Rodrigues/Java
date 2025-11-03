@@ -9,9 +9,13 @@ public class primos {
         ArrayList<Integer> primos = new ArrayList<>();
 
         for (int n = 0; n < 100; n++) {
-            for (int j = 2; j <= n; j++) {
-                if (n % j == 0) {
-                    primos.add(j);                    
+            for (int j = 2; j <= (n-1); j++) {
+                if (n <= 1) {
+                    break;
+                } else if (n % j == 0) {
+                    break;
+                } else {
+                    
                 }
             }
         }
