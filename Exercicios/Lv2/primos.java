@@ -11,7 +11,7 @@ public class primos {
         for (int n = 0; n < 100; n++) {
             for (int j = 2; j <= n; j++) {
                 if (n % j == 0) {
-                    primos.add(n);                    
+                    primos.add(j);                    
                 }
             }
         }
