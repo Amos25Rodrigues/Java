@@ -8,8 +8,12 @@ public class primos {
 
         ArrayList<Integer> primos = new ArrayList<>();
 
-        for (int i = 0; i < 100; i++) {
-            
+        for (int n = 0; n < 100; n++) {
+            for (int j = 2; j <= n; j++) {
+                if (n % j == 0) {
+                    primos.add(n);                    
+                }
+            }
         }
 
         sc.close();
