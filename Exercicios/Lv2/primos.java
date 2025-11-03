@@ -25,9 +25,7 @@ public class primos {
             }
         }
 
-        for (int p : ) {
-            System.out.println(primos.get(i));
-        }
+        for (int p : primos) System.out.println(p);/*for-each (ou enhanced for) é uma forma mais simples de percorrer listas e arrays em Java. o Java entende que p vai receber cada elemento da lista primos, um por um, sem precisar lidar com índices (i).*/
 
         sc.close();
     }
