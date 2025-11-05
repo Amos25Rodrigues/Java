@@ -7,7 +7,6 @@ public class verificarCPF {
 
         
 
-
         sc.close();
     }
 }
