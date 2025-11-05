@@ -8,17 +8,22 @@ public class funcaoFatorial {
         System.out.print("Digite um numero: ");
         int n = sc.nextInt();
 
-        
+        System.out.print(fatorial(n));
 
         sc.close();
     }
 
     public static int fatorial(int n){
+        int res = 1;
         for (int i = n; i >= 1; i--) {
-            n *= i;
-            System.out.println(i);
-            if (i > 1) System.out.println(" x ");
+            res *= i;
+            System.out.print(i);
+            if (i > 1) {
+                System.out.print(" x ");
+            } else {
+                System.out.print(" = ");
             }
-        return 0;
+        }
+        return res;
     }
 }
