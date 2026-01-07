@@ -5,12 +5,17 @@ public class verificarCPF {
 
     public static boolean ValidadeCPF(String cpf) {
         String d = cpf;
+        int ver = 0;
 
          try {
+            int soma = 0;
             int[] nums = new int[11];
             for (int i = 0; i < 11; i++) nums[i] = Character.getNumericValue(d.charAt(i));
 
-            
+            for (int i = 0, peso = 10; i < 11; i++, peso--) {
+                soma += nums[i] * peso;
+            }
+
             return false;
          } catch (Exception e) {
             return false;
