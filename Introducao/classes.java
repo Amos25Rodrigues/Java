@@ -1,4 +1,4 @@
-package Introdução;
+package Introducao;
 public class classes {
     public static void main(String[] args){
         System.out.println("Hello World");
@@ -22,7 +22,7 @@ class Carro {
     }
 
     public String acelerar(){
-            System.out.println("Acelerando o carro " + this.modelo);
-        return "oi";
+            System.out.println("Acelerando o carro " + modelo);
+        return "todos os carros aceleraram";
     }
 }

@@ -1,4 +1,4 @@
-package Introdução;
+package Introducao;
 import java.util.ArrayList;
 
 public class vetores {
@@ -41,6 +41,8 @@ public class vetores {
         misturado.add('A');           // char -> Character
         misturado.add(true);          // boolean -> Boolean
         misturado.add("Texto");       // String
+
+        System.out.println(misturado.get(4));
 
         /*
         ⚠️ Cuidados com ArrayList<Object>:

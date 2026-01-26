@@ -1,4 +1,4 @@
-package Introdução;
+package Introducao;
 public class ifElse {
 
         public static void main(String[] args) {
@@ -31,19 +31,17 @@ public class ifElse {
             System.out.println("É menor que 99");
         }
 
-        if (str == "Amós") {
+        if ("Amós".equals(str)) {
             System.out.println("Amós");
-        } else if (str == "Saymon") {
+        } else if ("Saymon".equals(str)) {
             System.out.println("Saymon");
         }
         
-        if (meuSexo == 'M') {
-            System.out.println("É Homem");
-        } else if (meuSexo == 'F') {
-            System.out.println("É Mulher");
-        } else {
-            System.out.println("Não Binário");
-        }
+            switch (meuSexo) {
+                case 'M' -> System.out.println("É Homem");
+                case 'F' -> System.out.println("É Mulher");
+                default -> System.out.println("Não Binário");
+            }
 
     }
     
