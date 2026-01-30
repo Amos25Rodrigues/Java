@@ -2,11 +2,9 @@ package introducao;
 
 public class Interface {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        ContaBancaria contaPoupanca = new ContaPoupanca();        
     }
-    
-    static String realizarTransferencia(ContaBancaria conta, String metodo) {
-        return conta.transferencia(metodo);
+
 }
 
 interface ContaBancaria {
@@ -88,6 +86,4 @@ class TransferenciaBoleto {
     public static void transferir(double valor) {
         System.out.println("Transferência via Boleto no valor de: R$" + valor);
     }
-}
-
 }
