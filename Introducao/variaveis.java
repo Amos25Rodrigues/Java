@@ -1,5 +1,5 @@
 package Introducao;
-public class variaveis {
+public class Variaveis {
     public static void main(String[] args) {
         
         /*DECLARANDO VARIÁVEIS*/

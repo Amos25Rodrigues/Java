@@ -1,5 +1,5 @@
 package Introducao;
-public class casting {
+public class Casting {
     public static void main(String[] args) {
 
         //casting explicito

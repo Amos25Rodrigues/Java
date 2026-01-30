@@ -17,7 +17,7 @@ public class Main {
         System.out.print("Seu telefone: ");
         p.setTelefone(sc.nextLine());
 
-        System.out.println("--------------------------------\nSeu nome: " + p.getNome() + "\nSeu email: " + p.getEmail() + "\nSeu telefone: " + p.getTelefone() + "\n--------------------------------");
+        //System.out.println("--------------------------------\nSeu nome: " + p.getNome() + "\nSeu email: " + p.getEmail() + "\nSeu telefone: " + p.getTelefone() + "\n--------------------------------");
 
         sc.close();
     }

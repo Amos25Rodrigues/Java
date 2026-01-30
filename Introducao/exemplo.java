@@ -1,5 +1,5 @@
 package Introducao;
-public class exemplo {
+public class Exemplo {
     int cont = 1;
 
     public void metodo(){
@@ -10,7 +10,7 @@ public class exemplo {
     }
 
     public static void main(String[] args) {
-        exemplo e = new exemplo();
+        Exemplo e = new Exemplo();
         e.metodo();
     }
 }

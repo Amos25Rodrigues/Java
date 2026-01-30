@@ -1,5 +1,5 @@
 package Introducao;
-public class classes {
+public class Classes {
     public static void main(String[] args){
         System.out.println("Hello World");
         Carro meuCarro = new Carro("Corolla");
