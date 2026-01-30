@@ -2,16 +2,29 @@ package introducao;
 
 public class Interface {
     public static void main(String[] args) {
-        ContaBancaria contaPoupanca = new ContaPoupanca();        
+        ContaBancaria contaPoupanca = new ContaPoupanca();
+        ContaBancaria contaCorrente = new ContaCorrente();
+
+        contaPoupanca.depositar(500.0);
+        System.out.println("Saldo Conta Poupança: R$" + contaPoupanca.getSaldo());
+        
+        contaPoupanca.transferencia(TransferenciaPix.transferir(100.0));
+
+        System.out.println("Saldo Conta Poupança após transferência Pix: R$" + contaPoupanca.getSaldo());
+
     }
 
+    public static void print(ContaBancaria conta) {
+        System.out.println("Saldo: R$" + conta.getSaldo());
+        
+    }
 }
 
 interface ContaBancaria {
 
     double getSaldo();
 
-    String transferencia(String metodo);
+    double transferencia(double valor);
 
     void depositar(double saldo);
 
@@ -28,8 +41,9 @@ class ContaPoupanca implements ContaBancaria {
     }
 
     @Override
-    public String transferencia(String metodo) {
-        return metodo;
+    public double transferencia(double valor) {
+        this.saldo -= valor;
+        return valor;
     }
 
     @Override
@@ -52,8 +66,8 @@ class ContaCorrente implements ContaBancaria {
     }
 
     @Override
-    public String transferencia(String metodo) {
-        return metodo;
+    public double transferencia(double valor) {
+        return valor;
     }
 
     @Override
@@ -69,21 +83,24 @@ class ContaCorrente implements ContaBancaria {
 
 class TransferenciaPix {
     
-    public static void transferir(double valor) {
+    public static double transferir(double valor) {
         System.out.println("Transferência via Pix no valor de: R$" + valor);
+        return valor;
     }
 }
 
 class TransferenciaTED {
     
-    public static void transferir(double valor) {
+    public static double transferir(double valor) {
         System.out.println("Transferência via TED no valor de: R$" + valor);
+        return valor;
     }
 }
 
 class TransferenciaBoleto {
     
-    public static void transferir(double valor) {
+    public static double transferir(double valor) {
         System.out.println("Transferência via Boleto no valor de: R$" + valor);
+        return valor;
     }
 }
