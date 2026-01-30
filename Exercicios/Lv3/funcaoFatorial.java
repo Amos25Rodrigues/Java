@@ -1,4 +1,4 @@
-package Exercicios.Lv3;
+package exercicios.lv3;
 import java.util.Scanner;
 
 public class funcaoFatorial {

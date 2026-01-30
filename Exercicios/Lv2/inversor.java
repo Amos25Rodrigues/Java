@@ -1,4 +1,4 @@
-package Exercicios.Lv2;
+package exercicios.lv2;
 import java.util.Scanner;
 
 public class inversor {

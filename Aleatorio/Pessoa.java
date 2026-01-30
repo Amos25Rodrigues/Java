@@ -1,4 +1,4 @@
-package Aleatorio;
+package aleatorio;
 
 public class Pessoa {
     private String nome;

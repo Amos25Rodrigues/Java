@@ -1,4 +1,4 @@
-package Aleatorio;
+package aleatorio;
 import java.util.Scanner;
 
 public class Main {

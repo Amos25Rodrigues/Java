@@ -1,4 +1,4 @@
-package Exercicios.Lv1;
+package exercicios.lv1;
 import java.util.Scanner;
 
 public class maior {

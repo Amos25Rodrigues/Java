@@ -1,4 +1,4 @@
-package Exercicios.Lv1;
+package exercicios.lv1;
 
 public class olaMundo {
     public static void main(String[] args) {

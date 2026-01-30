@@ -1,4 +1,4 @@
-package Introducao;
+package introducao;
 public class Classes {
     public static void main(String[] args){
         System.out.println("Hello World");

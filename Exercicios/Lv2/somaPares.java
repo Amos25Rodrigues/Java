@@ -1,4 +1,4 @@
-package Exercicios.Lv2;
+package exercicios.lv2;
 
 public class somaPares {
     public static void main(String[] args) {
