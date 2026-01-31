@@ -4,27 +4,29 @@ public class Interface {
     public static void main(String[] args) {
         ContaBancaria contaPoupanca = new ContaPoupanca();
         ContaBancaria contaCorrente = new ContaCorrente();
+        contaPoupanca.depositar(1000);
+        contaCorrente.depositar(500);
 
-        contaPoupanca.depositar(500.0);
-        System.out.println("Saldo Conta Poupança: R$" + contaPoupanca.getSaldo());
-        
-        contaPoupanca.transferencia(TransferenciaPix.transferir(100.0));
+        contaPoupanca.transferencia(contaCorrente, Transferencia.transferirPix(200));
 
-        System.out.println("Saldo Conta Poupança após transferência Pix: R$" + contaPoupanca.getSaldo());
+        //Aqui é a sacada da interface, posso usar o mesmo método de printar para diferentes tipos de conta
+        print(contaPoupanca);
+        print(contaCorrente);    
 
     }
-
-    public static void print(ContaBancaria conta) {
-        System.out.println("Saldo: R$" + conta.getSaldo());
-        
+    //método que recebe a interface como parâmetro e pode receber qualquer implementação dela como argumento
+    static void print(ContaBancaria conta) {
+        System.out.println("Saldo " + conta.toString() + ": R$ " + conta.getSaldo());
     }
+
+
 }
 
 interface ContaBancaria {
 
     double getSaldo();
 
-    double transferencia(double valor);
+    double transferencia(ContaBancaria conta, double valor);
 
     void depositar(double saldo);
 
@@ -41,8 +43,9 @@ class ContaPoupanca implements ContaBancaria {
     }
 
     @Override
-    public double transferencia(double valor) {
-        this.saldo -= valor;
+    public double transferencia(ContaBancaria conta, double valor) {
+        this.sacar(valor);
+        conta.depositar(valor);
         return valor;
     }
 
@@ -66,7 +69,9 @@ class ContaCorrente implements ContaBancaria {
     }
 
     @Override
-    public double transferencia(double valor) {
+    public double transferencia(ContaBancaria conta, double valor) {
+        this.sacar(valor);
+        conta.depositar(valor);
         return valor;
     }
 
@@ -81,25 +86,21 @@ class ContaCorrente implements ContaBancaria {
     }
 }
 
-class TransferenciaPix {
+
+
+class Transferencia {
     
-    public static double transferir(double valor) {
+    public static double transferirPix(double valor) {
         System.out.println("Transferência via Pix no valor de: R$" + valor);
         return valor;
     }
-}
 
-class TransferenciaTED {
-    
-    public static double transferir(double valor) {
+    public static double transferirTED(double valor) {
         System.out.println("Transferência via TED no valor de: R$" + valor);
         return valor;
     }
-}
 
-class TransferenciaBoleto {
-    
-    public static double transferir(double valor) {
+    public static double transferirBoleto(double valor) {
         System.out.println("Transferência via Boleto no valor de: R$" + valor);
         return valor;
     }
