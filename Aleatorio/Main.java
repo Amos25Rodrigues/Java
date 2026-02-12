@@ -5,21 +5,23 @@ public class Main {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 
-        Pessoa p = new Pessoa();
+        String resposta;
+        while (true) {
+            System.out.print("Deseja criar um usuário? (s/n): ");
+            resposta = sc.nextLine();
 
-        System.out.print("--------------------------------\nSeu nome: ");
-        p.setNome(sc.nextLine());
-        //System.out.println("Seu nome é " + p.getNome() + "!");
+            if (resposta.equals("s")) {
+                System.out.println("Criando usuário...");
+            } else if (resposta.equals("n")) {
+                System.out.println("Operação cancelada.");
+                break;
+            } else {
+                System.out.println("Resposta inválida.");
+            }
 
-        System.out.print("Seu email: ");
-        p.setEmail(sc.nextLine());
-
-        System.out.print("Seu telefone: ");
-        p.setTelefone(sc.nextLine());
-
-        //System.out.println("--------------------------------\nSeu nome: " + p.getNome() + "\nSeu email: " + p.getEmail() + "\nSeu telefone: " + p.getTelefone() + "\n--------------------------------");
-
-        sc.close();
+            sc.close();
+        }
+        
     }
 
 }

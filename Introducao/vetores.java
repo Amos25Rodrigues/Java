@@ -1,5 +1,6 @@
 package introducao;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Vetores {
     public static void main(String[] args) {
@@ -58,6 +59,8 @@ public class Vetores {
 
         System.out.println(d1);
         System.out.println(d2);
+
+        List<Dados> listaDeDados = new ArrayList<>();
     }
 
     //CRIANDO UMA CLASSE PERSONALIZADA
