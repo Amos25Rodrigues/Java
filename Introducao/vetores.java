@@ -61,6 +61,8 @@ public class Vetores {
         System.out.println(d2);
 
         List<Dados> listaDeDados = new ArrayList<>();
+        listaDeDados.add(d1);
+        listaDeDados.add(d2);
     }
 
     //CRIANDO UMA CLASSE PERSONALIZADA

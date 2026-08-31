@@ -1,0 +1,4 @@
+com\todoapp\App.class
+com\todoapp\DatabaseManager.class
+com\todoapp\TodoFrame.class
+com\todoapp\Tarefa.class
